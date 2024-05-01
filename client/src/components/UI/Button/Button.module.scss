@@ -1,0 +1,27 @@
+.btn {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid lightblue;
+	background-color: white;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+
+	&:disabled {
+		pointer-events: none;
+		border-color: lightgray;
+		background-color: lightgray;
+		color: white;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: azure;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.form {
+	display: grid;
+	gap: 20px;
+	width: 100%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border: 1px solid lightblue;
+	border-radius: 10px;
+	background-color: white;
+
+	&__label {
+		display: block;
+		width: 100%;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		padding: 5px;
+		border: 1px solid lightblue;
+		border-radius: 5px;
+		font-size: 18px;
+		line-height: 26px;
+		background-color: azure;
+	}
+
+	&__error {
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		color: tomato;
+	}
+
+	+ * {
+		margin-top: 30px;
+	}
+}
